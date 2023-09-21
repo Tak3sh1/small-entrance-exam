@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- CSS -->
+    <style>
+        /* Estilo personalizado para os botões */
+        .custom-btn {
+            background-color: #03CBBF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-btn:hover {
+            background-color: #0397a5;
+        }
+
+        /* Estilo para a tabela */
+        table {
+            background-color: white;
+            padding: 10px 10px;
+        }
+
+        th, td {
+            text-align: center;
+        }
+
+        th {
+            background-color: #03CBBF;
+            color: white;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f5f5f5;
+        }
+
+        /* Estilo para o botão de menu */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+      
+        .calendario {
+            position: sticky;
+            top: 0;
+            z-index: 2; /* Valor maior que o z-index do carrossel */
+            background-color: white;
+        }
+
+        /* Estilo para o ícone de lupa */
+        .search-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+      /* Estilo para o ícone de lupa */
+    .search-icon {
+        position: absolute;
+        right: 5px; /* Reduza a distância da direita para ajustar o posicionamento */
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        width: 20px; /* Reduza o tamanho da imagem da lupa conforme necessário */
+        height: 20px; /* Reduza o tamanho da imagem da lupa conforme necessário */
+      }
+    </style>
+    <title>Vestibulinho - Etec Adolpho Berezin</title>
+</head>
+<body style="background-color: #f5f5f5;">
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #03CBBF;">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="gat.jpeg" width="40" height="40" class="d-inline-block align-top" alt="Gato Logo">
+            Vestibulinho - Etec Adolpho Berezin
+        </a>
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+            <div class="position-relative">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <img src="lupa.png" alt="Pesquisar" class="search-icon">
+            </div>
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link custom-btn" href="index.html">Início</a>
+                </li>
+              <li class="nav-item">
+                    <a class="nav-link custom-btn" href="calendario.html">Calendário</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-btn" href="provas.html">Provas e Gabarito</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-btn" href="cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-btn" href="área.html">Área do candidato</a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+</nav>
+ 
+    
+</nav>
+<br>
+<br>
+
+
+        <!-- Seção de Cronograma de Calendário -->
+        <div class="container mt-5">
+            <h2 style="color: #03CBBF; text-align: center; font-size: 28px; border-bottom: 2px solid #03CBBF; padding-bottom: 10px;">Cronograma de Calendário</h2>
+            <!-- Tabela de Provas e Gabaritos -->
+            <div style="border: 1px solid #03CBBF; padding: 15px;">
+                <table class="table table-bordered">
+                    <thead class="table-primary">
+                        <tr>
+                            <th scope="col">Ano</th>
+                            <th scope="col">Primeiro Semestre</th>
+                            <th scope="col">Segundo Semestre</th>
+                        </tr>
+                    </thead>
+<!--menu de prova--> 
+                    <tbody> 
+
+                        <tr>
+                            <th scope="row">2023</th>
+                            <td><a href="https://www.vestibulinhoetec.com.br/provas-gabaritos/detalhe.asp?q=2023" style="color: #03CBBF; text-decoration: underline;">Provas e Gabaritos 1S 2023</a></td>
+                            <td><a href="https://www.vestibulinhoetec.com.br/provas-gabaritos/detalhe.asp?q=2023" style="color: #03CBBF; text-decoration: underline;">Provas e Gabaritos 2S 2023</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2022</th>
+                            <td><a href="https://www.vestibulinhoetec.com.br/provas-gabaritos/detalhe.asp?q=2022" style="color: #03CBBF; text-decoration: underline;">Provas e Gabaritos 1S 2022</a></td>
+                            <td><a href="https://www.vestibulinhoetec.com.br/provas-gabaritos/detalhe.asp?q=2022" style="color: #03CBBF; text-decoration: underline;">Provas e Gabaritos 2S 2022</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2020</th>
+                            <td><a href="https://www.vestibulinhoetec.com.br/provas-gabaritos/detalhe.asp?q=2020" style="color: #03CBBF; text-decoration: underline;">Provas e Gabaritos 1S 2020</a></td>
+                            <td><a href="https://www.vestibulinhoetec.com.br/provas-gabaritos/detalhe.asp?q=2020" style="color: #03CBBF; text-decoration: underline;">Provas e Gabaritos 2S 2020</a></td>
+                        </tr>
+                        <th scope="row">2019</th>
+                        <td><a href="https://www.vestibulinhoetec.com.br/provas-gabaritos/detalhe.asp?q=2019" style="color: #03CBBF; text-decoration: underline;">Provas e Gabaritos 1S 2019</a></td>
+                        <td><a href="https://www.vestibulinhoetec.com.br/provas-gabaritos/detalhe.asp?q=2019" style="color: #03CBBF; text-decoration: underline;">Provas e Gabaritos 2S 2019</a></td>
+                    </tr>
+                    </tr>
+                <th scope="row">2018</th>
+                <td><a href="https://www.vestibulinhoetec.com.br/provas-gabaritos/detalhe.asp?q=2018" style="color: #03CBBF; text-decoration: underline;">Provas e Gabaritos 1S 2018</a></td>
+                <td><a href="https://www.vestibulinhoetec.com.br/provas-gabaritos/detalhe.asp?q=2018" style="color: #03CBBF; text-decoration: underline;">Provas e Gabaritos 2S 2018</a></td>
+            </tr>
+               </tr>
+               <th scope="row">2017</th>
+                <td><a href="https://www.vestibulinhoetec.com.br/provas-gabaritos/detalhe.asp?q=2017" style="color: #03CBBF; text-decoration: underline;">Provas e Gabaritos 1S 2017</a></td>
+                <td><a href="https://www.vestibulinhoetec.com.br/provas-gabaritos/detalhe.asp?q=2017" style="color: #03CBBF; text-decoration: underline;">Provas e Gabaritos 2S 2017</a></td>
+             </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

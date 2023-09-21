@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+
+        .custom-btn {
+            background-color: #03CBBF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-btn:hover {
+            background-color: #0397a5;
+        }
+
+      
+        .table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+        th {
+            background-color: #03CBBF;
+            color: white;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f5f5f5;
+        }
+
+   
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+      
+        .calendario {
+            position: sticky;
+            top: 0;
+            z-index: 2; 
+            background-color: white;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+     
+    .search-icon {
+        position: absolute;
+        right: 5px; 
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        width: 20px; 
+        height: 20px; 
+      }
+    </style>
+
+    <title>Vestibulinho - Etec Adolpho Berezin</title>
+</head>
+<body style="background-color: #f5f5f5;">
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #03CBBF;">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="gat.jpeg" width="40" height="40" class="d-inline-block align-top" alt="Gato Logo">
+            Vestibulinho - Etec Adolpho Berezin
+        </a>
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+            <div class="position-relative">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <img src="lupa.png" alt="Pesquisar" class="search-icon">
+            </div>
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link custom-btn" href="index.html">Início</a>
+                </li>
+              <li class="nav-item">
+                    <a class="nav-link custom-btn" href="calendario.html">Calendário</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-btn" href="provas.html">Provas e Gabarito</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-btn" href="cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-btn" href="área.html">Área do candidato</a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+</nav>
+ 
+ 
+    
+       
+        <h2 style="color: #03CBBF; text-align: center; font-size: 28px; border-bottom: 2px solid #03CBBF; padding-bottom: 10px;">Cronograma de Calendário</h2>
+    
+       
+    
+    
+
+
+  
+  <table class="table">
+<div class="calendario" style="border: 1px solid #03CBBF; padding: 15px;">
+
+
+        <div style="border: 1px solid #03CBBF; padding: 15px;">
+            <table class="table">
+                <thead class="table-primary">
+                    <tr>
+                        <th scope="col">Data</th>
+                        <th scope="col">Evento</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                </thead>
+            
+                <tbody>
+                    <tr>
+                        <td>De 19/09 até as 15h do dia 29/09/2023</td>
+                        <td>Solicitação para redução da taxa</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>De 02/10 até as 15h do dia 08/11/2023</td>
+                        <td>Inscrições para o Processo Seletivo</td>
+                        <td>Valor da taxa R$34,00</td>
+                    </tr>
+                    <tr>
+                        <td>18/10/2023, a partir das 15h</td>
+                        <td>Divulgação do resultado da solicitação de redução da taxa de inscrição</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>De 18/10, a partir das 15h até as 15h do dia 08/11/2023</td>
+                        <td>Inscrição para o candidato beneficiado com a redução da taxa de inscrição</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>De 19/10 até 20/10/2023</td>
+                        <td>Prazo para interposição de recurso para os candidatos que tiveram a solicitação de redução da taxa de inscrição indeferida</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>27/10/2023, a partir das 15h</td>
+                        <td>Divulgação da análise dos recursos de redução da taxa de inscrição</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>06/12/2023, a partir das 15h</td>
+                        <td>Divulgação dos
+                    <tr>
+                        <td>06/12/2023, a partir das 15h</td>
+                        <td>Divulgação dos locais de Exame</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10/12/2023 às 13h30</td>
+                        <td>Exame - Provas do Vestibulinho 1º SEMESTRE 2024 às 13h30</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>14/12/2023, a partir das 15h</td>
+                        <td>Divulgação dos gabaritos oficiais no site vestibulinhoetec.com.br</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>19/12/2023, a partir das 15h</td>
+                        <td>Divulgação da classificação geral dos cursos com prova de aptidão e da convocação para a prova de aptidão</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11/01/2024, a partir das 15h</td>
+                        <td>Divulgação da lista de classificação geral dos demais cursos e do resultado da prova de aptidão.</td>
+                        <td></td>
+                    </tr>
+                </table>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+   
+</div>
+</table>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

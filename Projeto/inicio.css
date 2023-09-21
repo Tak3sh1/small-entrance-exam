@@ -1,0 +1,71 @@
+.custom-btn {
+    background-color: #03CBBF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0397a5;
+}
+
+
+.table{
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+th {
+    background-color: #03CBBF;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.calendario {
+    position: sticky;
+    top: 0;
+    z-index: 2; 
+    background-color: white;
+}
+
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search-icon {
+position: absolute;
+right: 5px; 
+top: 50%;
+transform: translateY(-50%);
+cursor: pointer;
+width: 20px; 
+height: 20px;
+}
+
+h2{
+    color: #03CBBF;
+}
+
+.navbar-brand{
+    color: aliceblue;
+}
